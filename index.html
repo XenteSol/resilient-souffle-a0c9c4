@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#ffffff">
 <title>Alida Romina, Registered Nurse | English and Spanish Speaking Nurse Advocate in Valencia</title>
 <meta name="description" content="Bilingual registered nurse and medical interpreter helping English-speaking patients in Valencia, Spain. Appointments, hospital stays and the Spanish health system[...]">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,38 +14,40 @@
 :root{color-scheme:light;--bg:#f7f4ee;--bg-strong:#f0eadf;--surface:#fffdf9;--ink:#1f3e3c;--muted:#54706b;--sea:#2b6565;--sea-deep:#1f4f52;--sea-soft:#e7f0ee;--sun:#f0c86b;--line:#d7e0d8;--salmon:#f9e9e4;--sand:#fbf6f2;--sage:#f5f7f6;--radius:12px;--shadow:0 18px 40px rgba(12,25,27,.06)}
 html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
 *,*::before,*::after{box-sizing:border-box}
-body{margin:0;background:linear-gradient(180deg,#f9f7f3 0%,#f6f2eb 100%);color:var(--ink);font:400 1.0625rem/1.7 Figtree,system-ui,sans-serif}
+body{margin:0;background:linear-gradient(180deg,#f9f7f3 0%,#f6f2eb 100%);color:var(--ink);font:400 1.0625rem/1.7 Figtree,system-ui,sans-serif;-webkit-font-smoothing:antialiased}
 h1,h2{font-family:'DM Serif Display',Georgia,serif;font-weight:400;line-height:1.1;margin:0 0 .65em;letter-spacing:-.02em}
 h3{font-weight:700;line-height:1.3;margin:0 0 .6em;letter-spacing:-.01em}
-h1{font-size:clamp(2.7rem,7vw,4.6rem)}h2{font-size:clamp(2.1rem,5vw,3.2rem)}h3{font-size:1.5rem}
+h1{font-size:clamp(2.2rem,6.5vw,3.6rem)}h2{font-size:clamp(1.6rem,4.5vw,2.2rem)}h3{font-size:1.1rem}
 p{margin:0 0 1em;max-width:62ch}
 a{color:var(--sea)}
 .wrap{max-width:1160px;margin:0 auto;padding:0 1.5rem}
 section{padding:4.5rem 0}
-/* Minimal single-line header */
-header.top{padding:0;min-height:48px;border-bottom:1px solid rgba(31,62,60,.04);background:rgba(255,255,255,.82);backdrop-filter:saturate(1.05) blur(8px);position:sticky;top:0;z-index:40}
+/* Minimal single-line header (mobile-friendly) */
+header.top{padding:0;min-height:48px;border-bottom:1px solid rgba(31,62,60,.04);background:rgba(255,255,255,.92);backdrop-filter:saturate(1.05) blur(8px);position:sticky;top:0;z-index:40}
 header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem;height:48px}
 .brand{display:inline-block;text-decoration:none;color:var(--ink);line-height:1;font-weight:600;font-size:.95rem;padding:0;margin:0}
-.brand small{display:block;font-weight:400;font-size:.8rem;color:var(--muted);opacity:.9}
-nav{display:flex;align-items:center;gap:1rem}
+.brand small{display:block;font-weight:400;font-size:.8rem;color:var(--muted);opacity:.95}
+nav{display:flex;align-items:center;gap:0.75rem}
 nav a{color:var(--muted);text-decoration:none;font-size:.95rem;padding:.35rem .6rem;border-radius:8px}
 nav a.contact{font-weight:700;color:var(--sea)}
-/* Make language controls visually minimal but still accessible */
+/* Make language controls visually minimal but accessible */
 .langs{display:inline-flex;gap:.25rem}
-.langs button{font:inherit;font-size:.78rem;padding:.22rem .5rem;border:1px solid transparent;border-radius:999px;background:transparent;color:var(--muted);cursor:pointer}
+.langs button{font:inherit;font-size:.78rem;padding:.28rem .6rem;border:1px solid transparent;border-radius:999px;background:transparent;color:var(--muted);cursor:pointer}
 .langs button[aria-pressed="true"]{background:var(--sea);color:var(--bg);border-color:var(--sea)}
-/* Hide secondary nav items on small screens to keep the bar clean */
-@media(max-width:520px){nav a.hide-sm{display:none} .wrap{padding:0 .75rem}}
-/* keep rest of styles unchanged */
-.hero{position:relative;isolation:isolate;overflow:hidden;min-height:620px;display:flex;align-items:center;padding:5rem 0;background:#163d37;color:var(--surface)}
+/* Larger tap targets on touch devices */
+.btn, nav a, .langs button{min-height:40px;display:inline-flex;align-items:center;justify-content:center}
+/* Hide secondary nav items on very small screens to keep the bar clean */
+@media(max-width:520px){nav a.hide-sm{display:none} .wrap{padding:0 .75rem} .brand small{display:none}}
+/* make hero and controls adapt on small screens */
+.hero{position:relative;isolation:isolate;overflow:hidden;min-height:420px;display:flex;align-items:center;padding:3rem 0;background:#163d37;color:var(--surface)}
 .hero .wrap{width:100%;position:relative;z-index:1}
-.hero h1{max-width:16ch;text-wrap:balance}
-.hero .lead{font-size:1.15rem;color:#f0f3ed;max-width:48ch}
-.hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% center;z-index:-2;animation:care-drift 24s ease-in-out infinite alternate}
-.hero::after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(17,48,42,.96) 0%,rgba(17,48,42,.9) 30%,rgba(17,48,42,.5) 62%,rgba(17,48,42,.18) 100%)}
-@keyframes care-drift{from{transform:scale(1.03) translateX(-.5%)}to{transform:scale(1.12) translateX(1%)}}
+.hero h1{max-width:28ch}
+.hero .lead{font-size:1rem;color:#f0f3ed;max-width:60ch}
+.hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:60% center;z-index:-2}
+@media(max-width:639px){.hero{min-height:360px;padding:2rem 0}.actions a{display:block;width:100%}.actions{gap:.5rem}}
+@media(prefers-reduced-motion:reduce){.hero-image, .hero-image{animation:none}!important}
 .wave{display:block;width:100%;height:36px;color:var(--sea-soft);background:#163d37}
-.grid{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.grid{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
 .grid div{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem}
 .icon{width:1.3rem;height:1.3rem;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .service-icon{width:3rem;height:3rem;padding:.7rem;border-radius:50%;background:var(--sea-soft);color:var(--sea);margin-bottom:1rem}
@@ -62,26 +65,26 @@ dialog.req{border:1px solid var(--line);border-radius:16px;background:var(--surf
 <body>
 <div id="en" lang="en">
 <header class="top"><div class="wrap">
-  <a class="brand" href="#top" aria-label="SOL Health Advocates home">Jane Doe, RN<small>Valencia</small></a>
-  <nav>
-    <a class="contact" href="#contact">Contact</a>
+  <a class="brand" href="#top" aria-label="SOL Health Advocates home">Jane Doe, RN <small>Valencia</small></a>
+  <nav role="navigation" aria-label="Main navigation">
+    <a class="contact hide-sm" href="#contact">Contact</a>
     <div class="langs" role="group" aria-label="Language switch">
-      <button data-l="en" aria-pressed="true">EN</button>
-      <button data-l="es" aria-pressed="false">ES</button>
+      <button type="button" data-l="en" aria-pressed="true">EN</button>
+      <button type="button" data-l="es" aria-pressed="false">ES</button>
     </div>
   </nav>
 </div></header>
 
 <main id="top">
 <section class="hero">
-<img class="hero-image" src="patient-support.jpg" width="1920" height="1280" alt="" fetchpriority="high">
+<img class="hero-image" src="patient-support.jpg" width="1920" height="1280" alt="Patient support" fetchpriority="high" loading="eager">
 <div class="wrap">
   <span class="tag"><svg class="icon" aria-hidden="true"><use href="icons.svg#pin"/></svg>Valencia and surrounding area</span>
   <h1>A nurse on your side in the Spanish health system.</h1>
-  <p class="lead">I'm a bilingual registered nurse and medical interpreter. I go with English-speaking patients to appointments and hospital stays in Valencia, so you understand every word and ev[...]
+  <p class="lead">I'm a bilingual registered nurse and medical interpreter. I go with English-speaking patients to appointments and hospital stays in Valencia, so you understand every word and every decision.</p>
   <div class="actions">
     <a class="btn primary" href="#contact">Book a consultation</a>
-    <a class="btn ghost" href="https://wa.me/14152618836">Message on WhatsApp</a>
+    <a class="btn ghost" href="https://wa.me/14152618836" rel="noopener noreferrer">Message on WhatsApp</a>
   </div>
   <p class="hero-note"><svg class="icon" aria-hidden="true"><use href="icons.svg#heart"/></svg>English &amp; Spanish. One person on your side.</p>
 </div>
@@ -93,12 +96,12 @@ dialog.req{border:1px solid var(--line);border-radius:16px;background:var(--surf
   <span class="eyebrow">Care without the language barrier</span>
   <h2>How I can help</h2>
   <div class="grid">
-    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#calendar"/></svg><h3>Appointments</h3><p>I attend GP, specialist and test visits with you, interpret in real time a[...]
-    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#hospital"/></svg><h3>Hospital stays</h3><p>Support for admissions, procedures and discharge, including updates for [...]
-    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#medicine"/></svg><h3>Diagnoses and medications</h3><p>Plain-English explanations of what you were told, what it mea[...]
-    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#compass"/></svg><h3>Navigating the system</h3><p>Public (SNS) or private care, referrals, health cards, insurance q[...]
-    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#video"/></svg><h3>Remote support</h3><p>Phone or video help when you can't have someone in the room, or when family[...]
-    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#notes"/></svg><h3>Follow-up</h3><p>A written summary after each visit, so nothing gets lost between appointments.</[...]
+    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#calendar"/></svg><h3>Appointments</h3><p>I attend GP, specialist and test visits with you, interpret in real time and make sure you understand.</p></div>
+    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#hospital"/></svg><h3>Hospital stays</h3><p>Support for admissions, procedures and discharge, including updates for family.</p></div>
+    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#medicine"/></svg><h3>Diagnoses and medications</h3><p>Plain-English explanations of what you were told, what it means, and next steps.</p></div>
+    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#compass"/></svg><h3>Navigating the system</h3><p>Public (SNS) or private care, referrals, health cards, insurance questions — I can help.</p></div>
+    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#video"/></svg><h3>Remote support</h3><p>Phone or video help when you can't have someone in the room.</p></div>
+    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#notes"/></svg><h3>Follow-up</h3><p>A written summary after each visit, so nothing gets lost between appointments.</p></div>
   </div>
 </div></section>
 
@@ -109,10 +112,10 @@ dialog.req{border:1px solid var(--line);border-radius:16px;background:var(--surf
 <footer><div class="wrap">
   <p>Jane Doe, RN · Valencia, Spain · hello@example.com</p>
   <p>Advocacy and interpretation services only. Not medical treatment or diagnosis. In an emergency, call 112.</p>
-  <p><a href="legal.html?lang=en#aviso-legal">Aviso legal</a><a href="legal.html?lang=en#privacy">Privacy policy</a><a href="legal.html?lang=en#cookies">Cookies</a><a href="legal.html?lang=en#con[...]</a></p>
+  <p><a href="legal.html?lang=en#aviso-legal">Aviso legal</a> <a href="legal.html?lang=en#privacy">Privacy policy</a> <a href="legal.html?lang=en#cookies">Cookies</a></p>
 </div></footer>
 
-<!-- dialogs and second language content preserved later in file (omitted here for brevity in the commit) -->
+<!-- dialogs and second language content preserved later in file -->
 
 <script>
 (function(){
