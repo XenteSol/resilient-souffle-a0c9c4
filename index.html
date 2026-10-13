@@ -4,13 +4,13 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Alida Romina, Registered Nurse | English and Spanish Speaking Nurse Advocate in Valencia</title>
-<meta name="description" content="Bilingual registered nurse and medical interpreter helping English-speaking patients in Valencia, Spain. Appointments, hospital stays and the Spanish health system explained.">
+<meta name="description" content="Bilingual registered nurse and medical interpreter helping English-speaking patients in Valencia, Spain. Appointments, hospital stays and the Spanish health system[...]">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="patient-support.jpg" fetchpriority="high">
 <style>
-:root{color-scheme:light;--bg:#f7f4ee;--bg-strong:#f0eadf;--surface:#fffdf9;--ink:#1f3e3c;--muted:#54706b;--sea:#2b6565;--sea-deep:#1f4f52;--sea-soft:#e7f0ee;--sun:#f0c86b;--line:#d7e0d8;--salmon:#f2d7b7;--sand:#f8f1e6;--sage:#edf4ec;--shadow:0 18px 28px rgba(31,62,60,.08);--radius:22px}
+:root{color-scheme:light;--bg:#f7f4ee;--bg-strong:#f0eadf;--surface:#fffdf9;--ink:#1f3e3c;--muted:#54706b;--sea:#2b6565;--sea-deep:#1f4f52;--sea-soft:#e7f0ee;--sun:#f0c86b;--line:#d7e0d8;--salmon:#f9e9e4;--sand:#fbf6f2;--sage:#f5f7f6;--radius:12px;--shadow:0 18px 40px rgba(12,25,27,.06)}
 html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
 *,*::before,*::after{box-sizing:border-box}
 body{margin:0;background:linear-gradient(180deg,#f9f7f3 0%,#f6f2eb 100%);color:var(--ink);font:400 1.0625rem/1.7 Figtree,system-ui,sans-serif}
@@ -21,101 +21,41 @@ p{margin:0 0 1em;max-width:62ch}
 a{color:var(--sea)}
 .wrap{max-width:1160px;margin:0 auto;padding:0 1.5rem}
 section{padding:4.5rem 0}
-header.top{padding:1rem 0;border-bottom:1px solid rgba(31,62,60,.08);background:rgba(255,255,255,.74);backdrop-filter:saturate(1.2) blur(12px);position:sticky;top:0;z-index:30}
+header.top{padding:0.5rem 0;border-bottom:1px solid rgba(31,62,60,.08);background:rgba(255,255,255,.74);backdrop-filter:saturate(1.2) blur(12px);position:sticky;top:0;z-index:30}
 header.top .wrap{display:flex;justify-content:space-between;align-items:center;gap:1rem}
-.brand{display:inline-flex;align-items:center;gap:0;text-decoration:none;color:var(--ink);line-height:1;padding:.45rem .7rem;border:1px solid rgba(31,62,60,.08);border-radius:14px;background:rgba(255,255,255,.22);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 8px 18px rgba(17,48,42,.05);transition:transform .22s ease,box-shadow .22s ease,background .22s ease}
-.brand:hover{transform:translateY(-1px);box-shadow:inset 0 1px 0 rgba(255,255,255,.6),0 12px 22px rgba(17,48,42,.08)}
-/* Premium responsive logo styles (replaces .brand img sizing) */
-.brand { padding: .6rem .95rem; border-radius:16px; background:rgba(255,255,255,.22); box-shadow:0 18px 40px rgba(12,25,27,.10); }
-.brand-logo{ display:block; width:100%; height:auto; max-width:560px; object-fit:contain; filter:drop-shadow(0 18px 30px rgba(20,50,52,.12)) saturate(1.04) contrast(1.03); transform-origin:left center; transition:transform .22s ease,filter .22s ease,opacity .22s ease; }
-@media(max-width:639px){ .brand { padding:.35rem .7rem; border-radius:12px; } .brand-logo{ max-width:280px; filter:drop-shadow(0 8px 18px rgba(20,50,52,.08)); } }
-@media(min-width:640px) and (max-width:1099px){ .brand-logo{ max-width:420px; } }
-@media(min-width:1100px){ .brand { padding:.65rem 1.1rem; border-radius:18px; } .brand-logo{ max-width:720px; transform:translateY(-2px); filter:drop-shadow(0 24px 42px rgba(12,25,27,.14)) saturate(1.06); } }
-
-nav{display:flex;align-items:center;gap:.25rem}
+.brand{display:inline-flex;align-items:center;gap:0;text-decoration:none;color:var(--ink);line-height:1;padding:.35rem .6rem;border-radius:10px;background:transparent;font-weight:700}
+.brand:hover{transform:none;box-shadow:none}
+/* Keep logo styles present but they're no longer used */
+.brand-logo{display:none}
+@media(max-width:639px){ .brand{padding:.25rem .5rem;border-radius:8px} }
+nav{display:flex;align-items:center;gap:.5rem}
 nav a{text-decoration:none;color:var(--muted);font-size:.95rem;transition:color .2s ease}
 nav a:hover{color:var(--ink)}
-nav a.hide-sm{display:none}
-@media(min-width:640px){nav a.hide-sm{display:inline}}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:.65rem;padding:.9rem 1.45rem;border-radius:12px;font-weight:700;text-decoration:none;border:2px solid transparent;transition:transform .2s ease,box-shadow .2s ease,background .2s ease,color .2s ease}
-.btn:hover{transform:translateY(-2px);box-shadow:0 12px 18px rgba(19,43,45,.08)}
-.btn:active{transform:translateY(0)}
-.btn.primary{background:linear-gradient(180deg,#f3d38b 0%,#eec761 100%);color:#1e3d46;box-shadow:0 8px 18px rgba(240,200,107,.28)}
+.langs{display:inline-flex;gap:.25rem;margin-left:1rem;padding-left:.2rem}
+.langs button{font:inherit;font-size:.8rem;padding:.25rem .6rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);cursor:pointer;transition:all .2s ease}
+.langs button[aria-pressed="true"]{background:var(--sea);color:var(--bg);border-color:var(--sea)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:.65rem;padding:.9rem 1.45rem;border-radius:12px;font-weight:700;text-decoration:none;border:2px solid transparent;transition:transform .18s ease,box-shadow .18s ease}
+.btn.primary{background:linear-gradient(180deg,#f3d38b 0%,#eec761 100%);color:#1e3d46}
 .btn.ghost{border-color:rgba(43,101,101,.45);color:var(--sea);background:rgba(255,255,255,.08)}
-.btn:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid var(--sea);outline-offset:3px}
-.actions{display:flex;flex-wrap:wrap;gap:.8rem;margin-top:1.5rem}
 .hero{position:relative;isolation:isolate;overflow:hidden;min-height:620px;display:flex;align-items:center;padding:5rem 0;background:#163d37;color:var(--surface)}
 .hero .wrap{width:100%;position:relative;z-index:1}
 .hero h1{max-width:16ch;text-wrap:balance}
 .hero .lead{font-size:1.15rem;color:#f0f3ed;max-width:48ch}
 .hero-image{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:70% center;z-index:-2;animation:care-drift 24s ease-in-out infinite alternate}
 .hero::after{content:'';position:absolute;inset:0;z-index:-1;background:linear-gradient(90deg,rgba(17,48,42,.96) 0%,rgba(17,48,42,.9) 30%,rgba(17,48,42,.5) 62%,rgba(17,48,42,.18) 100%)}
-.hero .tag{display:inline-flex;align-items:center;gap:.5rem;background:rgba(250,253,245,.12);color:#fafdf5;border:1px solid rgba(250,253,245,.22);box-shadow:inset 0 1px 0 rgba(255,255,255,.04)}
-.hero .btn.ghost{border-color:rgba(250,253,245,.65);color:var(--surface);background:rgba(17,48,42,.24)}
-.hero .btn.primary:hover{background:linear-gradient(180deg,#f7df9d 0%,#f3cd6d 100%)}
-.hero-note{display:flex;align-items:center;gap:.65rem;font-size:.92rem;margin:1.6rem 0 0;color:#e3ebe5}
-.motion-toggle{position:absolute;z-index:2;right:1.5rem;bottom:1.4rem;display:flex;align-items:center;gap:.5rem;border:1px solid rgba(255,253,249,.5);border-radius:999px;padding:.65rem .9rem;background:rgba(14,31,30,.22);color:#fafdf5;cursor:pointer}
-.motion-toggle:focus-visible{outline:3px solid var(--sun);outline-offset:4px}
-.motion-toggle::before{content:'Ⅱ';font-size:1rem;line-height:1}
-.motion-toggle[aria-pressed='true']::before{content:'▷'}
-[data-motion='paused'] .hero-image{animation-play-state:paused}
-@keyframes care-drift{from{transform:scale(1.03) translateX(-.5%)}to{transform:scale(1.12) translateX(1%)} }
-.tag{display:inline-block;background:var(--sea-soft);color:var(--sea);padding:.35rem .85rem;border-radius:999px;font-size:.9rem;font-weight:600;margin-bottom:1.2rem;box-shadow:inset 0 1px 0 rgba(255,255,255,.33)}
+@keyframes care-drift{from{transform:scale(1.03) translateX(-.5%)}to{transform:scale(1.12) translateX(1%)}}
 .wave{display:block;width:100%;height:36px;color:var(--sea-soft);background:#163d37}
-.alt{background:var(--sea-soft)}
-section[id$="about"]{background:var(--sea-soft)}
-section[id$="pricing"]{background:var(--sand)}
-section[id$="faq"]{background:var(--sage)}
 .grid{display:grid;gap:1.25rem;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-.grid div{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease;box-shadow:0 10px 22px rgba(31,62,60,.04)}
-.grid div:hover{transform:translateY(-3px);border-color:rgba(43,101,101,.35);box-shadow:0 18px 30px rgba(22,45,46,.06)}
+.grid div{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:1.6rem}
 .icon{width:1.3rem;height:1.3rem;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
 .service-icon{width:3rem;height:3rem;padding:.7rem;border-radius:50%;background:var(--sea-soft);color:var(--sea);margin-bottom:1rem}
 .eyebrow{display:block;font-size:.75rem;letter-spacing:.14em;text-transform:uppercase;color:var(--sea);font-weight:700;margin-bottom:.8rem}
-.process{display:grid;gap:2.5rem;align-items:center}
-.care-figure{margin:0;position:relative}
-.care-figure img{display:block;width:100%;height:100%;object-fit:cover;border-radius:var(--radius);box-shadow:var(--shadow)}
-.process .care-figure img{aspect-ratio:4/5}
-.care-figure figcaption{display:flex;align-items:center;gap:.7rem;position:absolute;bottom:1rem;left:1rem;right:1rem;padding:.9rem 1rem;border-radius:12px;background:rgba(255,255,255,.9);backdrop-filter:blur(8px);box-shadow:0 10px 20px rgba(17,48,42,.12)}
-.care-figure figcaption .icon{color:var(--sea)}
-.grid p{margin:0;color:var(--muted)}
-ol.steps{list-style:none;padding:0;margin:0;display:grid;gap:1.25rem;counter-reset:s}
-ol.steps li{counter-increment:s;padding-left:3.2rem;position:relative}
-ol.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:2.2rem;height:2.2rem;border-radius:50%;background:var(--sea);color:var(--bg);display:grid;place-items:center;font-weight:700}
-ol.steps h3{margin-bottom:.45rem}ol.steps p{margin:0;color:var(--muted)}
-.about{display:grid;gap:2rem}
-@media(min-width:720px){.about{grid-template-columns:minmax(260px,.85fr) 1.15fr;align-items:center;gap:3.5rem}.process{grid-template-columns:1.2fr .8fr;gap:4rem}}
-.about .care-figure img{aspect-ratio:4/3}
-details{border-bottom:1px solid var(--line);padding:1rem 0}
-summary{cursor:pointer;font-weight:700}
-details p{margin:.65rem 0 0;color:var(--muted)}
 .contact{text-align:center;background:var(--salmon);position:relative;overflow:hidden}
-.contact::before,.contact::after{content:'';position:absolute;width:13rem;height:13rem;border:1px solid rgba(145,112,70,.22);border-radius:50%;pointer-events:none}
-.contact::before{left:-7rem;top:-4rem}.contact::after{right:-7rem;bottom:-5rem}
-.contact-icon{display:grid;place-items:center;width:3.8rem;height:3.8rem;margin:0 auto 1.3rem;border-radius:50%;background:var(--surface);color:var(--sea);box-shadow:0 12px 28px rgba(31,62,60,.08)}
-.contact-icon .icon{width:1.8rem;height:1.8rem}
+.contact-icon{display:grid;place-items:center;width:3.8rem;height:3.8rem;margin:0 auto 1.3rem;border-radius:50%;background:var(--surface);color:var(--sea)}
 .contact p{margin-left:auto;margin-right:auto}
-.contact .actions{justify-content:center}
 footer{padding:2rem 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem;background:rgba(255,255,255,.42)}
-footer a{margin-right:1rem;color:var(--sea)}
-@media(max-width:639px){header.top .wrap{gap:.5rem}.brand img{height:64px;max-width:260px}.nav a{margin-left:0}.langs{margin-left:.5rem}.hero{min-height:560px;padding:3rem 0 5rem}}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-image{animation:none}.motion-toggle{display:none}.btn,.grid div{transition:none}.btn:hover,.grid div:hover{transform:none}}
-.langs{display:inline-flex;gap:.25rem;margin-left:1rem;padding-left:.2rem}
-.langs button{font:inherit;font-size:.8rem;padding:.25rem .7rem;border:1px solid var(--line);border-radius:999px;background:var(--surface);color:var(--ink);cursor:pointer;transition:all .2s ease}
-.langs button[aria-pressed="true"]{background:var(--sea);color:var(--bg);border-color:var(--sea)}
-.langs button:focus-visible{outline:3px solid var(--sea);outline-offset:3px}
-[hidden]{display:none!important}
 button.btn{font:inherit;font-weight:700;cursor:pointer}
-dialog.req{border:1px solid var(--line);border-radius:16px;background:var(--surface);color:var(--ink);padding:1.5rem;width:min(520px,92vw);max-height:90vh;overflow:auto;box-shadow:0 30px 60px rgba(12,25,27,.18)}
-dialog.req::backdrop{background:rgba(10,25,30,.62)}
-dialog.req h2{margin-right:2rem}
-dialog.req .close{float:right;font-size:1.6rem;line-height:1;background:none;border:0;color:var(--ink);cursor:pointer;padding:.2rem .5rem}
-dialog.req label{display:block;font-weight:700;margin:.9rem 0 .25rem;font-size:.95rem}
-dialog.req input,dialog.req select,dialog.req textarea{width:100%;font:inherit;padding:.7rem .8rem;border:1px solid var(--line);border-radius:10px;background:var(--bg);color:var(--ink)}
-dialog.req input:focus-visible,dialog.req select:focus-visible,dialog.req textarea:focus-visible,dialog.req .close:focus-visible{outline:3px solid var(--sea);outline-offset:2px}
-dialog.req .check{display:flex;gap:.6rem;align-items:flex-start;font-weight:400}
-dialog.req .check input{width:auto;margin-top:.4rem}
-dialog.req .invalid{border-color:#c0392b}
+dialog.req{border:1px solid var(--line);border-radius:16px;background:var(--surface);color:var(--ink);padding:1.5rem;width:min(520px,92vw);max-height:90vh;overflow:auto}
 .note-sm{background:var(--sea-soft);padding:.7rem .8rem;border-radius:10px;font-size:.9rem;margin:1rem 0 0}
 </style>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns=%27http://www.w3.org/2000/svg%27 viewBox=%270 0 100 100%27%3E%3Ctext y=%27.9em%27 font-size=%2790%27%3E%F0%9F%A9%BA%3C/text%3E%3C/svg%3E">
@@ -123,15 +63,14 @@ dialog.req .invalid{border-color:#c0392b}
 <body>
 <div id="en" lang="en">
 <header class="top"><div class="wrap">
-  <!-- Responsive brand: picture element with SVG/PNG fallbacks. Falls back to IMG_1998.png if svgs are not present. -->
-  <a class="brand" href="#top" aria-label="SOL Health Advocates home">
-    <picture>
-      <source media="(min-width:1100px)" srcset="logo-desktop.svg 1x, logo-desktop@2x.png 2x">
-      <source media="(min-width:640px)" srcset="logo-tablet.svg 1x, logo-tablet@2x.png 2x">
-      <img class="brand-logo" src="IMG_1998.png" alt="SOL Health Advocates logo" width="720" height="120" loading="eager">
-    </picture>
-  </a>
-  <nav><a class="hide-sm" href="#services">Services</a><a class="hide-sm" href="#how">How it works</a><a class="hide-sm" href="#faq">FAQ</a><a href="#contact"><strong>Contact</strong></a><span class="langs" aria-label="Language switcher"><button type="button" data-l="en" aria-pressed="true">EN</button><button type="button" data-l="es" aria-pressed="false">ES</button></span></nav>
+  <a class="brand" href="#top" aria-label="SOL Health Advocates home">Jane Doe, RN</a>
+  <nav>
+    <a href="#contact"><strong>Contact</strong></a>
+    <div class="langs">
+      <button data-l="en">EN</button>
+      <button data-l="es">ES</button>
+    </div>
+  </nav>
 </div></header>
 
 <main id="top">
@@ -140,7 +79,7 @@ dialog.req .invalid{border-color:#c0392b}
 <div class="wrap">
   <span class="tag"><svg class="icon" aria-hidden="true"><use href="icons.svg#pin"/></svg>Valencia and surrounding area</span>
   <h1>A nurse on your side in the Spanish health system.</h1>
-  <p class="lead">I'm a bilingual registered nurse and medical interpreter. I go with English-speaking patients to appointments and hospital stays in Valencia, so you understand every word and every next step.</p>
+  <p class="lead">I'm a bilingual registered nurse and medical interpreter. I go with English-speaking patients to appointments and hospital stays in Valencia, so you understand every word and ev[...]
   <div class="actions">
     <a class="btn primary" href="#contact">Book a consultation</a>
     <a class="btn ghost" href="https://wa.me/14152618836">Message on WhatsApp</a>
@@ -155,12 +94,12 @@ dialog.req .invalid{border-color:#c0392b}
   <span class="eyebrow">Care without the language barrier</span>
   <h2>How I can help</h2>
   <div class="grid">
-    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#calendar"/></svg><h3>Appointments</h3><p>I attend GP, specialist and test visits with you, interpret in real time and explain what it means.</p></div>
-    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#hospital"/></svg><h3>Hospital stays</h3><p>Support for admissions, procedures and discharge, including updates for family and clear next steps.</p></div>
-    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#medicine"/></svg><h3>Diagnoses and medications</h3><p>Plain-English explanations of what you were told, what it means and which questions to ask next.</p></div>
-    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#compass"/></svg><h3>Navigating the system</h3><p>Public (SNS) or private care, referrals, health cards, insurance questions and paperwork support.</p></div>
-    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#video"/></svg><h3>Remote support</h3><p>Phone or video help when you can't have someone in the room, or when family needs updates in English.</p></div>
-    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#notes"/></svg><h3>Follow-up</h3><p>A written summary after each visit, so nothing gets lost between appointments.</p></div>
+    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#calendar"/></svg><h3>Appointments</h3><p>I attend GP, specialist and test visits with you, interpret in real time a[...]
+    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#hospital"/></svg><h3>Hospital stays</h3><p>Support for admissions, procedures and discharge, including updates for [...]
+    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#medicine"/></svg><h3>Diagnoses and medications</h3><p>Plain-English explanations of what you were told, what it mea[...]
+    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#compass"/></svg><h3>Navigating the system</h3><p>Public (SNS) or private care, referrals, health cards, insurance q[...]
+    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#video"/></svg><h3>Remote support</h3><p>Phone or video help when you can't have someone in the room, or when family[...]
+    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#notes"/></svg><h3>Follow-up</h3><p>A written summary after each visit, so nothing gets lost between appointments.</[...]
   </div>
 </div></section>
 
@@ -174,30 +113,30 @@ dialog.req .invalid{border-color:#c0392b}
     <li><h3>Summary afterwards</h3><p>You receive a clear recap and next steps in English.</p></li>
   </ol>
 </div>
-<figure class="care-figure"><img src="care-team.jpg" width="1000" height="667" loading="lazy" alt="A healthcare professional using a laptop beside a stethoscope"><figcaption><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg>Support that stays with you before, during and after care.</figcaption></figure>
+<figure class="care-figure"><img src="care-team.jpg" width="1000" height="667" loading="lazy" alt="A healthcare professional using a laptop beside a stethoscope"><figcaption><svg class="icon" ari[...]
 </div></section>
 
 <section class="alt" id="about"><div class="wrap about">
-  <figure class="care-figure"><img src="care-details.jpg" width="1000" height="667" loading="lazy" alt="A stethoscope resting on a soft surface"><figcaption><svg class="icon" aria-hidden="true"><use href="icons.svg#shield"/></svg>Clear explanations and calm guidance when stress is already high.</figcaption></figure>
+  <figure class="care-figure"><img src="care-details.jpg" width="1000" height="667" loading="lazy" alt="A stethoscope resting on a soft surface"><figcaption><svg class="icon" aria-hidden="true"><[...]
   <div>
     <span class="eyebrow">Your advocate in Valencia</span>
     <h2>About Jane</h2>
-    <p>[Placeholder] I'm a registered nurse with [X] years of clinical experience, fluent in English and Spanish, and based in Valencia. I've seen how stressful it is to face a medical problem in another language.</p>
+    <p>[Placeholder] I'm a registered nurse with [X] years of clinical experience, fluent in English and Spanish, and based in Valencia. I've seen how stressful it is to face a medical problem in[...]
     <p>[Add credentials, licence recognition in Spain, and languages here.]</p>
   </div>
 </div></section>
 
 <section id="pricing"><div class="wrap">
   <h2>Pricing</h2>
-  <p>[Placeholder] Rates depend on the type of help and its length: per-visit, hourly, or a package for longer stays. Every quote is confirmed with you before we start. The intro call is free.</p>
+  <p>[Placeholder] Rates depend on the type of help and its length: per-visit, hourly, or a package for longer stays. Every quote is confirmed with you before we start. The intro call is free.</p[...]
 </div></section>
 
 <section class="alt" id="faq"><div class="wrap">
   <h2>Common questions</h2>
-  <details><summary>Do you provide medical care?</summary><p>No. I provide advocacy, interpretation and health-system guidance. I don't diagnose or treat, and I don't replace your doctors.</p></details>
+  <details><summary>Do you provide medical care?</summary><p>No. I provide advocacy, interpretation and health-system guidance. I don't diagnose or treat, and I don't replace your doctors.</p></d[...]
   <details><summary>Can you come to any hospital or clinic in Valencia?</summary><p>I cover Valencia city and nearby areas, public and private. Ask about locations further out.</p></details>
   <details><summary>Do I need private insurance?</summary><p>No. I help with both the public system (SNS) and private care, and can explain which fits your situation.</p></details>
-  <details><summary>Is my health information private?</summary><p>Yes. I handle it under GDPR and only with your consent. Please don't send medical details through this website; we'll share them securely after we speak.</p></details>
+  <details><summary>Is my health information private?</summary><p>Yes. I handle it under GDPR and only with your consent. Please don't send medical details through this website; we'll share them [...]
   <details><summary>Can you help in an emergency?</summary><p>In an emergency call 112 first. I can then support you by phone or join you as soon as possible.</p></details>
 </div></section>
 
@@ -215,36 +154,36 @@ dialog.req .invalid{border-color:#c0392b}
 <footer><div class="wrap">
   <p>Jane Doe, RN · Valencia, Spain · hello@example.com</p>
   <p>Advocacy and interpretation services only. Not medical treatment or diagnosis. In an emergency, call 112.</p>
-  <p><a href="legal.html?lang=en#aviso-legal">Aviso legal</a><a href="legal.html?lang=en#privacy">Privacy policy</a><a href="legal.html?lang=en#cookies">Cookies</a><a href="legal.html?lang=en#contact">Contact</a></p>
+  <p><a href="legal.html?lang=en#aviso-legal">Aviso legal</a><a href="legal.html?lang=en#privacy">Privacy policy</a><a href="legal.html?lang=en#cookies">Cookies</a><a href="legal.html?lang=en#con[...]</a></p>
 </div></footer>
 <dialog class="req" aria-labelledby="dt-en">
 <button type="button" class="close" data-close aria-label="Close">&times;</button>
 <h2 id="dt-en">Book a consultation</h2>
 <p style="margin-top:1rem">Or send a request and I will reply with times that suit you.</p>
-<form data-subject="Free intro call request" data-hdr='Name|Email|Phone|Call language|Help needed|Preferred times|Message' data-done="Your email app should now open with your request ready to send.">
+<form data-subject="Free intro call request" data-hdr='Name|Email|Phone|Call language|Help needed|Preferred times|Message' data-done="Your email app should now open with your request ready to sen[...]">
 <label for="n-en">Full name</label><input id="n-en" name="n" required autocomplete="name">
 <label for="e-en">Email</label><input id="e-en" name="e" type="email" required autocomplete="email">
 <label for="p-en">Phone or WhatsApp (optional)</label><input id="p-en" name="p" type="tel" autocomplete="tel">
 <label for="l-en">Language for the call</label><select id="l-en" name="l"><option>English</option><option>Spanish</option></select>
-<label for="h-en">What do you need help with?</label><select id="h-en" name="h"><option>Appointment accompaniment</option><option>Hospital stay support</option><option>Understanding a diagnosis or treatment</option><option>General health-system guidance</option></select>
+<label for="h-en">What do you need help with?</label><select id="h-en" name="h"><option>Appointment accompaniment</option><option>Hospital stay support</option><option>Understanding a diagnosis o[...]
 <label for="w-en">Preferred days and times (optional)</label><input id="w-en" name="w">
 <label for="m-en">Anything else? (optional)</label><textarea id="m-en" name="m" rows="3"></textarea>
-<p class="note-sm">Please do not include medical details here. We will share those securely after we speak.</p>
-<label class="check"><input type="checkbox" name="c" required><span>I agree to my details being used to reply to this request, as described in the <a href="legal.html?lang=en#privacy" target="_blank" rel="noopener">privacy policy</a>.</span></label>
+<p class="note-sm">Please do not include medical details here. We will share them securely after we speak.</p>
+<label class="check"><input type="checkbox" name="c" required><span>I agree to my details being used to reply to this request, as described in the <a href="legal.html?lang=en#privacy" target="_bl[...]"></span></label>
 <div class="actions"><button class="btn primary" type="submit">Send request</button></div>
 <p class="done" role="status" hidden></p>
 </form>
 </dialog>
 </div>
 <div id="es" lang="es" hidden><header class="top"><div class="wrap">
-  <a class="brand" href="#es-top" aria-label="SOL Health Advocates home">
-    <picture>
-      <source media="(min-width:1100px)" srcset="logo-desktop.svg 1x, logo-desktop@2x.png 2x">
-      <source media="(min-width:640px)" srcset="logo-tablet.svg 1x, logo-tablet@2x.png 2x">
-      <img class="brand-logo" src="IMG_1998.png" alt="SOL Health Advocates logo" width="720" height="120" loading="eager">
-    </picture>
-  </a>
-  <nav><a class="hide-sm" href="#es-services">Servicios</a><a class="hide-sm" href="#es-how">Cómo funciona</a><a class="hide-sm" href="#es-faq">Preguntas</a><a href="#es-contact"><strong>Contacto</strong></a><span class="langs" aria-label="Selector de idioma"><button type="button" data-l="en" aria-pressed="false">EN</button><button type="button" data-l="es" aria-pressed="true">ES</button></span></nav>
+  <a class="brand" href="#es-top" aria-label="SOL Health Advocates home">Jane Doe, RN</a>
+  <nav>
+    <a href="#es-contact"><strong>Contact</strong></a>
+    <div class="langs">
+      <button data-l="en">EN</button>
+      <button data-l="es">ES</button>
+    </div>
+  </nav>
 </div></header>
 
 <main id="es-top">
@@ -253,7 +192,7 @@ dialog.req .invalid{border-color:#c0392b}
 <div class="wrap">
   <span class="tag"><svg class="icon" aria-hidden="true"><use href="icons.svg#pin"/></svg>Valencia y alrededores</span>
   <h1>Una enfermera de tu lado en el sistema sanitario español.</h1>
-  <p class="lead">Soy enfermera colegiada bilingüe e intérprete médica. Acompaño a pacientes anglófonos a sus citas y hospitalizaciones en Valencia, para que entiendas cada palabra y cada siguiente paso.</p>
+  <p class="lead">Soy enfermera colegiada bilingüe e intérprete médica. Acompaño a pacientes anglófonos a sus citas y hospitalizaciones en Valencia, para que entiendas cada palabra y cada si[...]
   <div class="actions">
     <a class="btn primary" href="#es-contact">Reservar una consulta</a>
     <a class="btn ghost" href="https://wa.me/14152618836">Escríbeme por WhatsApp</a>
@@ -268,12 +207,12 @@ dialog.req .invalid{border-color:#c0392b}
   <span class="eyebrow">Apoyo sin barreras de idioma</span>
   <h2>En qué puedo ayudarte</h2>
   <div class="grid">
-    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#calendar"/></svg><h3>Citas médicas</h3><p>Te acompaño a consultas de médico de cabecera, especialistas y pruebas, interpreto en tiempo real y te explico qué significa.</p></div>
-    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#hospital"/></svg><h3>Ingresos hospitalarios</h3><p>Apoyo en ingresos, procedimientos y altas, con información para tu familia y próximos pasos claros.</p></div>
-    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#medicine"/></svg><h3>Diagnósticos y medicación</h3><p>Explicaciones claras en inglés sobre lo que te han dicho, qué significa y qué preguntas hacer después.</p></div>
-    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#compass"/></svg><h3>Cómo moverte por el sistema</h3><p>Sanidad pública (SNS) o privada, derivaciones, tarjeta sanitaria, seguros y trámites.</p></div>
-    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#video"/></svg><h3>Apoyo a distancia</h3><p>Ayuda por teléfono o videollamada cuando nadie puede acompañarte, o cuando tu familia necesita información en inglés.</p></div>
-    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#notes"/></svg><h3>Seguimiento</h3><p>Un resumen escrito después de cada visita, para que nada se pierda entre citas.</p></div>
+    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#calendar"/></svg><h3>Citas médicas</h3><p>Te acompaño a consultas de médico de cabecera, especialistas y pruebas[...]
+    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#hospital"/></svg><h3>Ingresos hospitalarios</h3><p>Apoyo en ingresos, procedimientos y altas, con información para[...]
+    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#medicine"/></svg><h3>Diagnósticos y medicación</h3><p>Explicaciones claras en inglés sobre lo que te han dicho, [...]
+    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#compass"/></svg><h3>Cómo moverte por el sistema</h3><p>Sanidad pública (SNS) o privada, derivaciones, tarjeta san[...]
+    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#video"/></svg><h3>Apoyo a distancia</h3><p>Ayuda por teléfono o videollamada cuando nadie puede acompañarte, o cu[...]
+    <div><svg class="icon service-icon" aria-hidden="true"><use href="icons.svg#notes"/></svg><h3>Seguimiento</h3><p>Un resumen escrito después de cada visita, para que nada se pierda entre cita[...]
   </div>
 </div></section>
 
@@ -287,30 +226,30 @@ dialog.req .invalid{border-color:#c0392b}
     <li><h3>Resumen posterior</h3><p>Recibes un resumen claro y los siguientes pasos en inglés.</p></li>
   </ol>
 </div>
-<figure class="care-figure"><img src="care-team.jpg" width="1000" height="667" loading="lazy" alt="Una profesional sanitaria usa un portátil junto a un estetoscopio"><figcaption><svg class="icon" aria-hidden="true"><use href="icons.svg#check"/></svg>Apoyo que te acompaña antes, durante y después de la atención.</figcaption></figure>
+<figure class="care-figure"><img src="care-team.jpg" width="1000" height="667" loading="lazy" alt="Una profesional sanitaria usa un portátil junto a un estetoscopio"><figcaption><svg class="icon" aria-hidden="true"><[...]
 </div></section>
 
 <section class="alt" id="es-about"><div class="wrap about">
-  <figure class="care-figure"><img src="care-details.jpg" width="1000" height="667" loading="lazy" alt="Un estetoscopio sobre una superficie suave"><figcaption><svg class="icon" aria-hidden="true"><use href="icons.svg#shield"/></svg>Explicaciones claras y orientación tranquila cuando el estrés ya es alto.</figcaption></figure>
+  <figure class="care-figure"><img src="care-details.jpg" width="1000" height="667" loading="lazy" alt="Un estetoscopio sobre una superficie suave"><figcaption><svg class="icon" aria-hidden="true">[...]
   <div>
     <span class="eyebrow">Tu apoyo en Valencia</span>
     <h2>Sobre Jane</h2>
-    <p>[Texto provisional] Soy enfermera colegiada con [X] años de experiencia clínica, hablo inglés y español con fluidez y vivo en Valencia. Sé lo estresante que es afrontar un problema médico en otro idioma.</p>
+    <p>[Texto provisional] Soy enfermera colegiada con [X] años de experiencia clínica, hablo inglés y español con fluidez y vivo en Valencia. Sé lo estresante que es afrontar un problema m�[...]
     <p>[Añade aquí titulación, reconocimiento en España e idiomas.]</p>
   </div>
 </div></section>
 
 <section id="es-pricing"><div class="wrap">
   <h2>Tarifas</h2>
-  <p>[Texto provisional] Las tarifas dependen del tipo de ayuda y su duración: por visita, por hora o en paquetes para estancias largas. Todo presupuesto se confirma contigo antes de empezar. La llamada inicial es gratuita.</p>
+  <p>[Texto provisional] Las tarifas dependen del tipo de ayuda y su duración: por visita, por hora o en paquetes para estancias largas. Todo presupuesto se confirma contigo antes de empezar. La[...]
 </div></section>
 
 <section class="alt" id="es-faq"><div class="wrap">
   <h2>Preguntas frecuentes</h2>
-  <details><summary>¿Prestas atención médica?</summary><p>No. Ofrezco acompañamiento, interpretación y orientación sobre el sistema sanitario. No diagnostico ni trato, y no sustituyo a tus médicos.</p></details>
-  <details><summary>¿Puedes ir a cualquier hospital o clínica de Valencia?</summary><p>Cubro la ciudad de Valencia y alrededores, en centros públicos y privados. Pregúntame por zonas más alejadas.</p></details>
+  <details><summary>¿Prestas atención médica?</summary><p>No. Ofrezco acompañamiento, interpretación y orientación sobre el sistema sanitario. No diagnostico ni trato, y no sustituyo a tus [...]</p></details>
+  <details><summary>¿Puedes ir a cualquier hospital o clínica de Valencia?</summary><p>Cubro la ciudad de Valencia y alrededores, en centros públicos y privados. Pregúntame por zonas más ale[...]
   <details><summary>¿Necesito seguro privado?</summary><p>No. Te ayudo tanto con la sanidad pública (SNS) como con la privada, y te explico cuál se adapta mejor a tu caso.</p></details>
-  <details><summary>¿Es privada mi información de salud?</summary><p>Sí. La trato conforme al RGPD y solo con tu consentimiento. Por favor, no envíes datos médicos a través de esta web; los compartiremos de forma segura cuando hablemos.</p></details>
+  <details><summary>¿Es privada mi información de salud?</summary><p>Sí. La trato conforme al RGPD y solo con tu consentimiento. Por favor, no envíes datos médicos a través de esta web; los[...]
   <details><summary>¿Puedes ayudarme en una emergencia?</summary><p>En una emergencia llama primero al 112. Después puedo apoyarte por teléfono o acompañarte en cuanto sea posible.</p></details>
 </div></section>
 
@@ -328,22 +267,22 @@ dialog.req .invalid{border-color:#c0392b}
 <footer><div class="wrap">
   <p>Jane Doe, RN · Valencia, España · hello@example.com</p>
   <p>Solo servicios de acompañamiento e interpretación. No constituye tratamiento ni diagnóstico médico. En una emergencia, llama al 112.</p>
-  <p><a href="legal.html?lang=es#aviso-legal">Aviso legal</a><a href="legal.html?lang=es#privacy">Política de privacidad</a><a href="legal.html?lang=es#cookies">Cookies</a><a href="legal.html?lang=es#contacto">Contacto</a></p>
+  <p><a href="legal.html?lang=es#aviso-legal">Aviso legal</a><a href="legal.html?lang=es#privacy">Política de privacidad</a><a href="legal.html?lang=es#cookies">Cookies</a><a href="legal.html?lang=es#con[...]</a></p>
 </div></footer>
 <dialog class="req" aria-labelledby="dt-es">
 <button type="button" class="close" data-close aria-label="Cerrar">&times;</button>
 <h2 id="dt-es">Reservar una consulta</h2>
 <p style="margin-top:1rem">O envía una solicitud y te responderé con horarios que te encajen.</p>
-<form data-subject="Solicitud de llamada inicial gratuita" data-hdr='Nombre|Correo|Teléfono|Idioma de la llamada|Ayuda necesaria|Horarios preferidos|Mensaje' data-done="Se abrirá tu aplicación de correo con la solicitud lista para enviar.">
+<form data-subject="Solicitud de llamada inicial gratuita" data-hdr='Nombre|Correo|Teléfono|Idioma de la llamada|Ayuda necesaria|Horarios preferidos|Mensaje' data-done="Se abrirá tu aplicación[...]">
 <label for="n-es">Nombre y apellidos</label><input id="n-es" name="n" required autocomplete="name">
 <label for="e-es">Correo electrónico</label><input id="e-es" name="e" type="email" required autocomplete="email">
 <label for="p-es">Teléfono o WhatsApp (opcional)</label><input id="p-es" name="p" type="tel" autocomplete="tel">
 <label for="l-es">Idioma de la llamada</label><select id="l-es" name="l"><option>Inglés</option><option>Español</option></select>
-<label for="h-es">¿En qué necesitas ayuda?</label><select id="h-es" name="h"><option>Acompañamiento a una cita</option><option>Apoyo en un ingreso hospitalario</option><option>Entender un diagnóstico o tratamiento</option><option>Guía general del sistema sanitario</option></select>
+<label for="h-es">¿En qué necesitas ayuda?</label><select id="h-es" name="h"><option>Acompañamiento a una cita</option><option>Apoyo en un ingreso hospitalario</option><option>Entender un diag[...]
 <label for="w-es">Días y horas preferidos (opcional)</label><input id="w-es" name="w">
 <label for="m-es">¿Algo más? (opcional)</label><textarea id="m-es" name="m" rows="3"></textarea>
 <p class="note-sm">Por favor, no incluyas datos médicos aquí. Los compartiremos de forma segura cuando hablemos.</p>
-<label class="check"><input type="checkbox" name="c" required><span>Acepto que se usen mis datos para responder a esta solicitud, según la <a href="legal.html?lang=es#privacy" target="_blank" rel="noopener">política de privacidad</a>.</span></label>
+<label class="check"><input type="checkbox" name="c" required><span>Acepto que se usen mis datos para responder a esta solicitud, según la <a href="legal.html?lang=es#privacy" target="_blank" rel="noopener">Política de privacidad</a></span></label>
 <div class="actions"><button class="btn primary" type="submit">Enviar solicitud</button></div>
 <p class="done" role="status" hidden></p>
 </form>
@@ -393,7 +332,7 @@ document.querySelectorAll('dialog.req').forEach(function(d){
  d.addEventListener('click',function(e){if(e.target===d)d.close();});
  var f=d.querySelector('form');
  f.addEventListener('submit',function(e){e.preventDefault();
- var ok=true;f.querySelectorAll('[required]').forEach(function(x){var v=x.type==='checkbox'?x.checked:x.value.trim();var bad=!v||(x.type==='email'&&!/^\S+@\S+\.\S+$/.test(x.value));x.classList.toggle('invalid',bad);if(bad)ok=false;});
+ var ok=true;f.querySelectorAll('[required]').forEach(function(x){var v=x.type==='checkbox'?x.checked:x.value.trim();var bad=!v||(x.type==='email'&&!/^\S+@\S+\.\S+$/.test(x.value));x.classList.to[...]
  if(!ok){f.querySelector('.invalid').focus();return;}
  var h=f.dataset.hdr.split('|'),k=['n','e','p','l','h','w','m'];
  var body=k.map(function(n,i){return h[i]+': '+(f.elements[n].value||'-');}).join('\n');
