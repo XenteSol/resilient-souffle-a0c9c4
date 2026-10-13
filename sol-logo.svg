@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 760" role="img" aria-labelledby="title desc">
+  <title id="title">SOL Health Advocates</title>
+  <desc id="desc">A professional healthcare advocate logo with sun, waves, and the words SOL Health Advocates Valencia Spain.</desc>
+  <rect width="1000" height="760" fill="#f5f5f2"/>
+  <g transform="translate(0 10)">
+    <g fill="none" stroke="#e6b853" stroke-width="10" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M140 120 L155 90"/>
+      <path d="M210 70 L210 30"/>
+      <path d="M280 120 L265 90"/>
+      <path d="M330 180 L360 160"/>
+      <path d="M330 250 L360 270"/>
+      <path d="M210 300 L210 340"/>
+      <path d="M140 250 L110 270"/>
+      <path d="M140 180 L110 160"/>
+    </g>
+    <circle cx="220" cy="180" r="110" fill="none" stroke="#e6b853" stroke-width="12"/>
+    <path d="M30 240 C 120 190, 220 190, 320 240" fill="none" stroke="#9bb7c0" stroke-width="14" stroke-linecap="round"/>
+    <path d="M23 280 C 112 250, 196 250, 292 282 C 360 300, 455 298, 530 278" fill="none" stroke="#9bb7c0" stroke-width="14" stroke-linecap="round"/>
+    <path d="M220 308 C 305 288, 409 288, 500 318" fill="none" stroke="#9bb7c0" stroke-width="14" stroke-linecap="round"/>
+    <path d="M340 350 C 450 330, 614 332, 720 356" fill="none" stroke="#9bb7c0" stroke-width="14" stroke-linecap="round"/>
+  </g>
+  <g>
+    <text x="500" y="450" text-anchor="middle" font-size="215" font-family="Georgia, 'Times New Roman', serif" font-weight="400" fill="#2d4d5c" letter-spacing="-10">SOL</text>
+    <text x="500" y="530" text-anchor="middle" font-size="56" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" font-weight="400" fill="#2d4d5c" letter-spacing="6">HEALTH ADVOCATES</text>
+    <line x1="280" y1="565" x2="720" y2="565" stroke="#e6b853" stroke-width="5"/>
+    <text x="500" y="620" text-anchor="middle" font-size="42" font-family="'Trebuchet MS', 'Segoe UI', sans-serif" fill="#2d4d5c" letter-spacing="6">VALENCIA • SPAIN</text>
+  </g>
+  <g transform="translate(0 12)">
+    <text x="500" y="700" text-anchor="middle" font-size="52" font-family="Georgia, 'Times New Roman', serif" font-style="italic" fill="#2d4d5c">Guidance. Understanding. Peace of mind.</text>
+  </g>
+</svg>
